@@ -1,0 +1,14 @@
+<div class="new_post form_controller">
+	 <h1 class="show_title"><%= @blog.title %></h1>
+	 <article class="show_content"><%= @blog.content %></article>
+
+	 <div class="show_bottom_contents clearfix">
+	 	<div class="show_bottom_content">
+			 <ul>
+			 	<li><%= link_to "Edit" , edit_blog_path(@blog.id), :class=>"edit_btn btn" %></li>
+			 	<li><%= link_to "Delete" , blog_path(@blog.id) , method: :delete , data:{confirm:"are you sure?"} , :class=>"delete_btn btn" %></li>
+			 </ul>
+		</div>
+	 </div>
+
+</div>

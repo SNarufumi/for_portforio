@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nagoya</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  </head>
+
+  <body class="">
+  <header class="clearfix">
+    <div class="header-wrapper">
+      <div class="header-content clearfix">
+        <h1>TUFSBBC</h1>
+        <ul>
+          <li class="btn">SCHEDULE</li>
+          <li class="btn">MEMBER</li>
+          <li><%= link_to "BLOG" , blogs_path , :class=>"btn"%></li>
+          <% if user_signed_in? %>
+　　　　　　<li><%= link_to "部員ログアウト" , destroy_user_session_path , :method=>:delete , :class=>"btn"%></li>
+          <%else%>
+          <li><%= link_to "部員ログイン" , new_user_session_path , :class=>"btn"%></li>
+          <%end%>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <content>
+    <div class="content-wrapper clearfix">
+      <%= yield %>
+    </div>
+  </content>
+
+  <footer>
+    <div class="footer-wrapper footer-clearfix">
+      <p>練習日：月・火（４・５限）金（１・２限）土（9:00〜12:30）<br>
+      場所：東京外国語大学グラウンド</p>
+    </div>
+  </footer>
+  </body>
+</html>

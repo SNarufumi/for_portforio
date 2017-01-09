@@ -1,0 +1,13 @@
+<div class="new_post">
+  <h1>編集フォーム</h1>
+    <% if @blog.errors.any? %>
+    <p><%= @blog.errors.messages[:title][0] %></p>
+    <p><%= @blog.errors.messages[:content][0] %></p>
+    <%end%>
+	<%= form_for (@blog) do |f| %>
+	 <li><%= f.text_field_tag 'blog[category_list]', @blog.category_list.join(',') , placeholder:"タグ" , class: "form_controller"%></li>
+	 <li><%= f.text_field :title, class: "title_field form_controller" , placeholder: "タイトル"%></li>
+	 <li><%= f.text_area :content, class: "content_field form_controller" , placeholder: "内容"%></li>
+	 <%= f.submit "編集完了", class: "btn submit_btn form_controller"%>
+	<% end %>
+</div>	

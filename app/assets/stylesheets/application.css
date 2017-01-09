@@ -1,0 +1,83 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+/*ーーーーー初期化ーーーーー*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.footer-clearfix:before{
+  content: "";
+  clear: both;
+  display: block;
+}
+/*------------------------*/
+/*-------共通レイアウトーーーーーーー*/
+.btn:hover{
+    opacity: 0.5 ;
+    cursor:pointer;
+}
+/*-----header layout----*/
+.header-wrapper{
+    width: 100%;
+}
+.header-content{
+    width: 960px;
+    margin: 0 auto;
+}
+.header-content li{
+    float: left;
+    width: 20%;
+    color: white;
+    background-color: orange;
+    text-align:center;
+    margin-right: 12px;
+    border-radius: 5px;
+    }
+/*---contentslayout---*/
+.content-wrapper{
+  width: 960px;
+  margin: 0 auto;
+}
+/*----footerlayout----*/
+.footer-wrapper{
+  margin-top: 10px;
+  width: 100%;
+  text-align:center;
+  border-top: black solid 2px;
+}
+#user_email{
+  width: 250px;
+}
+.login_btn{
+  background-color: #33ccff;
+}
+
+
+
+
+
+
+
+
+

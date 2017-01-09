@@ -1,0 +1,51 @@
+// Place all the styles related to the blogs controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/*-----新規投稿画面-----*/
+.new_post{
+	width: 100%;
+	border: #cccccc solid 3px;
+	border-radius: 5px;
+	margin-top: 10px;
+	text-align: center;
+}
+.form_controller{
+	width: 640px;
+	border: #cccccc solid 3px;
+	border-radius: 5px;
+	margin-top: 10px;
+	font-size: 20px;
+	padding: 5px;
+	overflow: scroll;
+}
+.content_field{
+	height: 600px;
+}
+.new_post .submit_btn{
+	background-color: #33ccff;
+	border: none;
+	margin-bottom: 5px;
+}
+.new_post p{
+  color: red;
+}
+
+/*-----index画面-----*/
+.index_page p{
+	font-size: 20px;
+}
+.index_page article{
+	line-height: 30px;
+}
+.index_item{
+	border-top: black solid 2px;
+}
+.index_page .btn{
+	background-color: #66ff33;
+	margin-right: 8px;
+}
+.index_page .btn_class{
+	text-align: right;
+	margin: 8px;
+}
