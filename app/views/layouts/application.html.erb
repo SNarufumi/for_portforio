@@ -7,7 +7,7 @@
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' , "data-turbolinks-eval":"false"%>
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   </head>
 
@@ -41,5 +41,13 @@
       場所：東京外国語大学グラウンド</p>
     </div>
   </footer>
+
+  <script type="text/javascript">
+    $(function(){
+        $(".btn").click(function() {
+             $(".member_content_box").toggle("true");
+        });
+    });
+  </script>
   </body>
 </html>
