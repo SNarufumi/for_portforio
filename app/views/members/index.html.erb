@@ -1,16 +1,23 @@
 <div class="member_content_wrapper clearfix">
   <div class="member_item clearfix">
     <% @members.each do |member| %>
-      <div class="member_item_box">
-        <li><%= image_tag member.image.url %></li>
-        <li><%= member.name %></li>
+      <div class="member_item_box box ">
+        <table>
+        <th><%= image_tag member.image.url %></th>
+        <th><%= member.name %></th>
+        <th><%= link_to "編集",edit_member_path(member.id) , :class=>"btn"%></th>
+        <th><%= link_to "削除",member_path(member.id),:method=>:delete , "data-confirm" => "本当に削除しますか？" , :class=>"btn"%></th>
+         </table>
       </div>
-      <div class="member_content_box">
+      <div class="member_content_box box">
         <%= member.content %>
       </div>
     <%end%>
   </div>
 </div>
 
+<div class="defolt_image"><img src="assets/defoimg.jpg"></div>
+
+  
 
 

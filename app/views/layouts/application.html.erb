@@ -35,17 +35,12 @@
     </div>
   </content>
 
-  <footer>
-    <div class="footer-wrapper footer-clearfix">
-      <p>練習日：月・火（４・５限）金（１・２限）土（9:00〜12:30）<br>
-      場所：東京外国語大学グラウンド</p>
-    </div>
-  </footer>
+    
 
   <script type="text/javascript">
     $(function(){
-        $(".btn").click(function() {
-             $(".member_content_box").toggle("true");
+        $(".member_content_wrapper .member_item_box").on("click", function() {
+            $(this).next().slideToggle();
         });
     });
   </script>
