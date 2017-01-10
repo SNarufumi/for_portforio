@@ -4,8 +4,9 @@
     <title>Nagoya</title>
     <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+    <%= javascript_include_tag 'garally' %>
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   </head>
 
@@ -16,7 +17,7 @@
         <h1>TUFSBBC</h1>
         <ul>
           <li class="btn">SCHEDULE</li>
-          <li class="btn">MEMBER</li>
+          <li><%= link_to "MEMBERS" , members_path , :class=>"btn"%></li>
           <li><%= link_to "BLOG" , blogs_path , :class=>"btn"%></li>
           <% if user_signed_in? %>
 　　　　　　<li><%= link_to "部員ログアウト" , destroy_user_session_path , :method=>:delete , :class=>"btn"%></li>

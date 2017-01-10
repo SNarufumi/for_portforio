@@ -1,0 +1,14 @@
+<div class="create_member">
+
+<% if @member.errors.any? %>
+    <p><%= @member.errors.messages[:name][0] %></p>
+    <p><%= @member.errors.messages[:content][0] %></p>
+    <p><%= @member.errors.messages[:image][0] %></p>
+    <%end%>
+<%= form_for(member) do |f| %>
+   <li><%= f.text_field :name, class: "name_field form_controller" , placeholder: "名前"%></li>
+   <li><%= f.text_area :content, class: "content_field form_controller" , placeholder: "内容"%></li>
+   <li><%= f.file_field :image , class: "image_tag"%> </li>
+   <%= f.submit "submit", class: "submit_btn btn form_controller"%>
+<% end %>
+</div>

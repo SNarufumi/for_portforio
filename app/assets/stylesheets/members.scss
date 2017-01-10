@@ -1,9 +1,8 @@
-// Place all the styles related to the blogs controller here.
+// Place all the styles related to the members controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
-/**-----新規投稿画面-----*/
-.new_post{
+/*-----新規投稿画面-----*/
+.new_member{
 	width: 100%;
 	border: #cccccc solid 3px;
 	border-radius: 5px;
@@ -22,30 +21,31 @@
 .content_field{
 	height: 600px;
 }
-.new_post .submit_btn{
+.new_member .submit_btn{
 	background-color: #33ccff;
 	border: none;
 	margin-bottom: 5px;
 }
-.new_post p{
+.create_member p{
   color: red;
 }
-
-/*-----index画面-----*/
-.index_page p{
-	font-size: 20px;
+.image_tag{
+	margin: 0 auto;
+	font-size: 15px;
 }
-.index_page article{
-	line-height: 30px;
+/*---indexlayput---*/
+.member_item{
+	margin-top: 10px;
 }
-.index_item{
-	border-top: black solid 2px;
+.member_content_box{
+	display: none;
+	width: 600px;
+	background-color: rgba(0,0,0,0.8);
+	color: white;
+	height: 300px;
 }
-.index_page .btn{
-	background-color: #66ff33;
-	margin-right: 8px;
-}
-.index_page .btn_class{
-	text-align: right;
-	margin: 8px;
+.member_item_box{
+	float: left;
+	text-align: center;
+	display: block;
 }

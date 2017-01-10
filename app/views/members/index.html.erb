@@ -1,0 +1,16 @@
+<div class="member_content_wrapper clearfix">
+  <div class="member_item clearfix">
+    <% @members.each do |member| %>
+      <div class="member_item_box">
+        <li><%= image_tag member.image.url %></li>
+        <li><%= member.name %></li>
+      </div>
+      <div class="member_content_box">
+        <%= member.content %>
+      </div>
+    <%end%>
+  </div>
+</div>
+
+
+
