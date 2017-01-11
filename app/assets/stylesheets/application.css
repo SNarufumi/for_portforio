@@ -54,6 +54,11 @@
     margin-right: 12px;
     border-radius: 5px;
     }
+  .title{
+    display: inline-block;
+    margin-right: 10px;
+  }
+
 /*---contentslayout---*/
 .content-wrapper{
   width: 960px;
