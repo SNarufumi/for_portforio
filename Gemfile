@@ -56,6 +56,7 @@ gem 'twitter-bootstrap-rails'
 gem 'devise'
 gem 'carrierwave'
 gem 'rmagick'
+gem 'kaminari'
 
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
