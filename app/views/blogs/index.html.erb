@@ -1,5 +1,6 @@
 <div class="index_page">
 <h1>Blog</h1>
+<P><%= link_to "新規投稿", new_blog_path , :class=>"btn" %></P>
 <% @blogs.each do |blog| %>
   <div class="index_item">
   <h1><%= blog.title %></h1>
