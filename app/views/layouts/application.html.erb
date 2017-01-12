@@ -22,6 +22,7 @@
         <ul>
           <li><%= link_to "MEMBERS" , members_path , :class=>"btn" %></li>
           <li><%= link_to "BLOG" , blogs_path , :class=>"btn"%></li>
+          
           <% if user_signed_in? %>
 　　　　　　<li><%= link_to "部員ログアウト" , destroy_user_session_path , :method=>:delete , :class=>"btn"%></li>
           <%else%>

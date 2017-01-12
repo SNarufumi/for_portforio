@@ -47,7 +47,7 @@
 }
 .header-content li{
     float: left;
-    width: 30%;
+    width: 25%;
     color: white;
     background-color: orange;
     text-align:center;
@@ -98,9 +98,7 @@
   font-weight: bold;
   font-size: 50px;
    }
-   .fa-facebook-square{
-    font-size: 3px;
-   }
+
 
 }
 
