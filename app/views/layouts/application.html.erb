@@ -3,7 +3,9 @@
   <head>
     <title>Nagoya</title>
     <%= csrf_meta_tags %>
-
+    <%= display_meta_tags({
+       :viewport => "width=device-width, initial-scale=1.0" ,
+      })%>
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -11,15 +13,14 @@
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   </head>
 
-  <body class="">
+  <body>
   <header class="clearfix">
     <div class="header-wrapper">
       <div class="header-content clearfix">
         <h1 class="title">TUFSBBC</h1>
         <a href="https://www.facebook.com/tufsbbc/" , class="fa fa-facebook-square fa-3x"></a>
         <ul>
-          <li class="btn">SCHEDULE</li>
-          <li><%= link_to "MEMBERS" , members_path , :class=>"btn"%></li>
+          <li><%= link_to "MEMBERS" , members_path , :class=>"btn" %></li>
           <li><%= link_to "BLOG" , blogs_path , :class=>"btn"%></li>
           <% if user_signed_in? %>
 　　　　　　<li><%= link_to "部員ログアウト" , destroy_user_session_path , :method=>:delete , :class=>"btn"%></li>

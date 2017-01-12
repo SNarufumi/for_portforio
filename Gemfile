@@ -57,6 +57,7 @@ gem 'devise'
 gem 'carrierwave'
 gem 'rmagick'
 gem 'kaminari'
+gem 'meta-tags'
 
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

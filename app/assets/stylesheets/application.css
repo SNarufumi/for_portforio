@@ -47,7 +47,7 @@
 }
 .header-content li{
     float: left;
-    width: 20%;
+    width: 30%;
     color: white;
     background-color: orange;
     text-align:center;
@@ -76,6 +76,32 @@
 }
 .login_btn{
   background-color: #33ccff;
+}
+
+
+
+/*----メディアクエリ-----*/
+
+
+@media (max-width: 768px) {
+  .header-wrapper li{
+    width: 100%;
+    margin:0 5px 10px 5px;
+  }
+  .btn{
+    font-size: 40px;
+  }
+  *{
+  font-size: 40px;
+   }
+  h1{
+  font-weight: bold;
+  font-size: 50px;
+   }
+   .fa-facebook-square{
+    font-size: 3px;
+   }
+
 }
 
 
